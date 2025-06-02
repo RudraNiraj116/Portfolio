@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Niraj Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="nav">
+      <div class="logo">Niraj Portfolio</div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#Skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Niraj Thakur</span></h1>
+        <h2><span id="profession"></span></h2>
+        <p>For more info, download my CV below</p>
+        <button id="btn">Download CV</button>
+      </div>
+      <div class="hero-image">
+        <img src="image.jpeg" alt="Niraj Thakur" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p><strong>Name:</strong> Niraj Thakur</p>
+          <p><strong>Age:</strong> 23</p>
+          <p><strong>Profession:</strong> Developer</p>
+          <p><strong>Graduation:</strong> B.Tech</p>
+          <p><strong>Languages:</strong> English, Hindi</p>
+          <p>
+            I am passionate about building modern, responsive websites and
+            applications that deliver real-world impact. In my free time, I love
+            solving coding challenges and exploring new tech.
+          </p>
+        </div>
+        <div class="about-img">
+          <img src="image.jpeg" alt="About Niraj" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="Skills" class="section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+          <p>HTML</p>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+          <p>CSS</p>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" />
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+          <p>React</p>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+          <p>Java</p>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+          <p>Python</p>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+          <p>C++</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="port_img.webp" alt="Portfolio" />
+          <h3>Portfolio Website</h3>
+          <p>Personal portfolio website built with HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="project-card">
+          <img src="weather_img.png" alt="Weather App" />
+          <h3>Weather App</h3>
+          <p>Fetches real-time weather data using public APIs with a clean UI.</p>
+        </div>
+        <div class="project-card">
+          <img src="todo_img.jpg" alt="Task Manager" />
+          <h3>Task Manager</h3>
+          <p>To-do list app built using HTML, CSS, and React JS.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/your-linkedin-username" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/your-github-username" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:your.email@example.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
