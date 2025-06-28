@@ -52,6 +52,64 @@ img {
   color: #53dceb;
 }
 
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 1100;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #53dceb;
+  transition: 0.3s ease;
+}
+
+/* Hamburger open animation */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile nav menu */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    z-index: 1000;
+  }
+
+  .nav-links a {
+    margin: 15px 0;
+    font-size: 1.2rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+
 /* Hero Section */
 .hero {
   min-height: 100vh;
@@ -95,6 +153,12 @@ img {
   border-radius: 6px;
   cursor: pointer;
 }
+
+#btn:hover{
+background-color:  white;
+
+}
+
 
 .hero-image {
   flex: 1;
@@ -144,6 +208,7 @@ img {
   flex-wrap: wrap;
   gap: 40px;
   align-items: center;
+  
 }
 
 .about-text {
@@ -155,18 +220,13 @@ img {
   flex: 1;
 }
 
-.about-img img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 12px;
-}
-
 
 .about-img img {
-  width: 100%;
+  width: 50%;
   max-width: 300px;
-  border-radius: 12px;
+  border-radius: 20vh;
   box-shadow: 0 8px 30px rgba(21, 170, 187, 0.697); /* Enhanced shadow */
+  margin-left: 70px;
 }
 
 
@@ -216,6 +276,49 @@ img {
   transform: translateY(-5px);
   box-shadow: 0 12px 25px rgba(83, 220, 235, 0.4); /* Shadow on hover */
 }
+
+
+/* circular skills */
+.circular-skills {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  margin-top: 7rem;
+  flex-wrap: wrap;
+}
+
+.circular-skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.circle {
+  --value: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(#53dceb calc(var(--value) * 1%), #e0e0e0 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  transition: background 1s ease-in-out;
+  
+}
+
+.circular-skill:hover{
+  box-shadow: 0 12px 25px rgba(83, 220, 235, 0.4); 
+  transform: translateY(-5px);
+
+
+}
+
+
+
 
 
 
@@ -326,6 +429,8 @@ img {
     flex-direction: column;
   }
 }
+
+
 
 
 
